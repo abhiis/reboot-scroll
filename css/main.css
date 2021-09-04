@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica.woff") format("woff"),
+    url("../fonts/coolvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../fonts/coolveticarg.woff") format("woff"),
+    url("../fonts/coolvetica.ttf") format("truetype");
+}
+* {
+  margin: auto;
+  color: #fff;
+}
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: "Coolvetica", sans-serif;
+  font-size: 18px;
+}
+
+.section {
+}
+.hero {
+  background-color: #000;
+  background-position: absolute;
+  background-size: cover;
+}
+.promo {
+  width: 95vw;
+  /* background: aquamarine; */
+  color: #000;
+  border-radius: 23px;
+}
+.promo1 {
+  width: 95vw;
+  height: 90vh;
+  /* background: #ffce00; */
+  border-radius: 23px;
+}
+.prom {
+  padding: 8em;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 560px;
+}
+.left {
+  flex: 1;
+  align-items: center;
+}
+.right {
+  flex: 1;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 8em;
+  margin: 0;
+  white-space: nowrap;
+}
+.big {
+  font-size: 10em;
+}
+.small {
+  font-size: 4em;
+}
+.black {
+  color: #000;
+}
+.alink {
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+.alink::after {
+  content: "";
+  background: white;
+  mix-blend-mode: exclusion;
+  width: calc(100% + 20px);
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -10px;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.alink:hover::after {
+  height: calc(100% + 8px);
+}
+h4 {
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.hero-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  margin-top: 6em;
+}
+
+.hero-text {
+  display: inline;
+  margin: 0 auto;
+}
+.hero-typed {
+  color: #000;
+  text-align: justify;
+  padding: 50px;
+  margin: 30px;
+  /* background-color: aquamarine; */
+}
+.divider {
+  color: #fff;
+  width: 30vw;
+  height: 2px;
+}
+.mySlides {
+  display: hidden;
+}
+.card-body {
+  margin-top: 50px;
+  color: #ffce00;
+}
